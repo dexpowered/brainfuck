@@ -10,5 +10,7 @@ public class Controller {
     public static void main(String args[]) throws UnknownHostException {
         //KeyGenerator.genKey();
         DomainController.getInstance().checkRegisteredDomain();
+
+
     }
 }

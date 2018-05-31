@@ -24,7 +24,7 @@ public class DomainController {
         InetAddress address = java.net.InetAddress.getByName(registered);
         String domainIP = address.getHostAddress();
         System.out.println("Registered IP address for this domain: " + domainIP);
-        if(getIpAddress() == domainIP) {
+        if(domainIP.equals(getIpAddress())) {
             System.out.println("Your IP:" + getIpAddress() + " is valide, tomcat228 has loaded");
         }
         else  {
